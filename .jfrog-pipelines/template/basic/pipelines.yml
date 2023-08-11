@@ -1,0 +1,10 @@
+valuesFilePath: ./values.yml
+
+pipelines:
+  - name: template_test
+    steps:
+      - name: {{ .Values.stepName }}
+        type: Bash
+        execution:
+          onExecute:
+            - echo "done"
