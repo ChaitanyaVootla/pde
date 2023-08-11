@@ -1,0 +1,8 @@
+pipelines:
+  - name: pde_default
+    steps:
+      - name: test
+        type: Bash
+        execution:
+          onExecute:
+            - echo "Hello World"
